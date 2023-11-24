@@ -14,4 +14,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include(router.urls)),
     path("aluno/<int:pk>/matriculas/", views.MatriculasAluno.as_view(), name="matriculas-aluno"),
+    path("curso/<int:curso_id>/matriculas/", views.MatriculasCurso.as_view(), name="matriculas-curso")
 ]
